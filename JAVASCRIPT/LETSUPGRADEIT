@@ -1,0 +1,18 @@
+function findMax(numbers) {
+  if (!Array.isArray(numbers)) {
+    throw new Error('Input must be an array of numbers.');
+  }
+
+  if (numbers.length === 0) {
+    throw new Error('Array must not be empty.');
+  }
+
+  let max = numbers[0];
+  for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] > max) {
+      max = numbers[i];
+    }
+  }
+
+  return max;
+}
