@@ -16,3 +16,15 @@ function findMax(numbers) {
 
   return max;
 }
+
+
+
+
+
+const numbersArray = [10, 25, 6, 48, 32, 15];
+const maxNumber = findMax(numbersArray);
+console.log('Maximum number:', maxNumber); 
+
+
+
+// Output: Maximum number: 48
